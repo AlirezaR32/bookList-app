@@ -5,7 +5,7 @@ import { BookContext } from "../context/BookContext";
 function Navbar() {
     const {books} = useContext(BookContext);
     return ( 
-        <div>
+        <div className="Navbar">
             <h1>
                 لیست کتاب های من 
             </h1>

@@ -1,15 +1,19 @@
-import './App.css';
-import BookContextProvider from './context/BookContext';
-import Navbar from './components/navbar';
+import "./App.css";
+import BookContextProvider from "./context/BookContext";
+import Navbar from "./components/navbar";
+import Booklist from "./components/booklist";
+import BookForm from "./components/bookForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="main_box">
         <BookContextProvider>
-          <Navbar/>
+          <Navbar />
+          <Booklist />
+          <BookForm/>
         </BookContextProvider>
-      </header>
+      </div>
     </div>
   );
 }

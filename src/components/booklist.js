@@ -1,15 +1,16 @@
 import React, { useContext } from 'react';
 import { BookContext } from '../context/BookContext';
+import BookDetail from './bookDetail';
 
 
 function Booklist() {
     const {books} = useContext(BookContext)
-    books.length?(
-        <div>
+    return books.length?(
+        <div className='Booklist'>
             <ul>
                 {books.map(book => {
                     return(
-                        <bookDetails key={books.id} book={book}/>
+                        <BookDetail key={book.id} book={book}/>
                     )
                 })}
             </ul>
