@@ -7,14 +7,14 @@ const BookContextProvider = (props) => {
         { title:'سووشون', author:'سیمین دانشور', id:1},
         { title:'خوب های بد بدهای خوب', author:'سومان چیمانی', id:2},
         ])
-    const removebook = (id) => {
-        setBooks(books.filter(book => book.id == !id ))
+    const removeBook = (id) => {
+        setBooks(books.filter(book => book.id !== id ))
     }
-    const addBook = (title) => {
-        setBooks([books,{title , id:uuid()}])
+    const addBook = (title ,author) => {
+        setBooks([...books,{title,author, id:uuid()}])
     }
     return (
-        <BookContext.Provider value={{books, addBook , removebook}}>
+        <BookContext.Provider value={{books, addBook , removeBook}}>
             {props.children}
         </BookContext.Provider>
     );

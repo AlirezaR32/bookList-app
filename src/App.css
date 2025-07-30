@@ -15,7 +15,7 @@
 }
 
 .App{
-  background: #219ebc;
+  background: #BCA88D;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
@@ -23,7 +23,7 @@
 }
 
 .Navbar{
-  background-color: brown;
+  background-color: #7D8D86;
   padding: 15px  0px ;
 }
 
@@ -37,14 +37,40 @@
 }
 
 .Booklist ul li{
-  background: #ffb703;
+  background: #62957f;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
   margin: 10px 0;
+  text-align: right;
 }
 
 .Booklist li:hover{
   opacity: 0.7;
   text-decoration: line-through;
+}
+
+form {
+  padding: 15px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  margin: 5px 0px;
+  background: #2f473c;
+  color: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+
+input[type='submit'] {
+  padding: 6px 20px;
+  display: block;
+  margin: 10px auto;
+  background: #F1F0E4;
+  border: 0;
+  border-radius: 8px;
 }
