@@ -29,8 +29,10 @@ npm start
 ```
 src/
 ├── components/
-│   ├── BookForm.js
-│   └── BookList.js
+│   ├── bookDetail.js
+│   ├── bookForm.js
+│   ├── booklist.js
+│   └──navbar.js
 ├── App.js
 └── index.js
 ```
